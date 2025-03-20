@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head><title>registration form</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+<link rel="icon" type="image/x-icon" href="babydog.JPG">
+<style>
+table{margin-left:auto;
+margin-right:auto;
+}
+img{display:block;
+margin-left:auto;
+margin-right:auto
+}
+p{font-family: Arial, Helvetica, sans-serif;
+}
+#footer {
+   position: relative;
+   bottom: 0;
+   width: 100%;
+   height: 60px; 
+   background: #808080;
+   text-align: center
+}
+</style>
+</head>
+<body style="background-color:#C0C0C0">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand">A Dog's Tale</a>
+    <button class="navbar-toggler" type="button">
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="mainpage.html">Home</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="learn.html">Learn</a>
+        </li>
+    
+        <li class="nav-item active">
+          <a class="nav-link" href="page7.html">CBD For Pets</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="about.html">About Us</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+
+<script>
+function myalert() {
+        alert("YOUR REGISTRATION IS CONFIRMED!!");    
+}
+function valid()
+{
+if( document.myform.fname.value == "" )
+{
+alert( "Please provide your name!" );
+document.myform.fname.focus();
+return false;
+}
+if( document.myform.email_id.value == "" )
+{
+alert( "Please provide your Email!" );
+document.myform.email_id.focus();
+return false;
+}
+if( document.myform.colors.value == "-1" )
+{
+alert( "Please provide your locality!" );
+return false;
+}
+return(true);
+}
+</script>
+
+<h1 align="center"><u>A DOG'S TALE</u></h1><br>
+<img src="day.jpeg" alt="dogs" width="400" height="300"><br>
+<p>Thinking about adopting a pet? Great news! You are embarking on a wonderful experience, not just for the dog or cat, but for you and your family as well. Few things are as rewarding as rescuing a precious life with four legs! As a family-owned company with our “ear to the ground”, PetTest knows that there are sometimes dogs and cats in need of a little extra care – diabetic pets, or as we prefer, “Sugar Babies” – that are up for adoption. The sad reality is that many people are afraid of the extra expertise and expenses diabetic dogs and cats bring with them. This is precisely where PetTest is uniquely positioned to help!<br><br>
+We are proud to announce that PetTest will provide the initial testing equipment and supplies to enrolled individuals who adopt a diabetic pet, making for a stress-free experience. We will also give you full access to our community partners to help educate you on the care of your new Sugar Baby.<br><br></p>
+<h2 align="center"><u>REGISTERATION FORM</u></h2>
+
+<form method=post name="myform" enctype="text/plain" style="font-size:15px" onsubmit="return(valid());" action="page1.html" >
+<pre>
+NAME:                      <input type=text name=fname value="" maxlength="50"><br><br>
+AGE:                       <input type=text name=fage value="" maxlength="2"><br><br>
+GENDER:                    <input type="radio" name="category" value="male">MALE
+                           <input type="radio" name="category" value="female">FEMALE<br>
+MOBILE NUMBER:             <input type=text name=fphone value="" maxlength="10"><br><br>
+Email ID:                  <input type="email" name="email_id"><br><br> 
+CHOOSE FILE TO PRINT:      <input type="file" name="file"><b>PLEASE SUBMIT YOUR DETAILS IN FILE FORMAT TOO!</b><br><br>
+COUNTRY:                   <input type=text name="country" value="INDIA" maxlength="25"><br><br>
+ADDRESS:                   <textarea rows=4 cols=50 placeholder="your address here!"></textarea><br><br>
+SELECT DATE OF BIRTH:      <input type="date" name="date"><br><br>
+SELECT AREA:               <select name="colors" size="1">
+                           <option value="-1" selected>CHOOSE YOUR AREA</option>
+                           <option value="1">ANDHERI</option>
+                           <option value="2">DADAR</option>
+                           <option value="3">THANE</option>
+                           <option value="4">VASAI</option>
+                           <option vaalue="5">MATUNGA</option>
+                           <option value="6">KURLA</option>
+                           <option value="7">GHATKOPAR</option>
+</select><br><br>
+<button onclick="myalert()">SUBMIT</button> <input type=reset value=CANCEL><br><br><br>
+</pre>
+</form>
+<div id="footer">© 2023 Dog'sTale by Advocate
+</div>
+</body>
+</html>
